@@ -1,5 +1,5 @@
 <template>
-  <header class="header--  shadow-sm_ position-fixed">
+  <header class="header-- shadow-sm_ position-fixed">
     <b-navbar toggleable="lg" type="dark" variant="info">
       <div class="container">
         <b-navbar-brand href="/">GiiBee</b-navbar-brand>
@@ -36,16 +36,16 @@
 export default {
   data() {
     return {
-      keyword: ""
+      keyword: "",
     };
   },
   methods: {
     onSearch(e) {
       e.preventDefault();
       this.$router.push({
-        path: `/products/search/${this.keyword}`
+        path: `/products/search/${this.keyword}`,
       });
-    }
-  }
+    },
+  },
 };
 </script>
